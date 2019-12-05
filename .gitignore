@@ -1,0 +1,5 @@
+# Project exclude paths
+/JsonToHiveTable/target/
+/MysqlToHive/target/
+/MysqlToTmp/target/
+/target/
