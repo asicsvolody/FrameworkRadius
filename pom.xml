@@ -26,7 +26,8 @@
         <module>JsonToHiveTable</module>
         <module>commons</module>
         <module>MysqlToTmp</module>
-        <module>PaqetToHiveTable</module>
+        <module>ParquetToHiveTable</module>
+        <module>PostgresDB</module>
     </modules>
 
     <dependencies>
@@ -36,6 +37,23 @@
             <artifactId>spark-hive_${scala.binary.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.8</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13-rc-2</version>
+            <scope>test</scope>
+        </dependency>
+
+
 
     </dependencies>
 

@@ -4,13 +4,15 @@
  * E-mail: yakimovvn@bk.ru
  */
 
-package ru.radius;
+package ru.radius.utils;
 
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
+import ru.radius.ParquetToHiveTable;
+import ru.radius.config.ParquetToHiveTableConfig;
 
 import javax.xml.stream.XMLStreamException;
 import java.io.IOException;

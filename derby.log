@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Thu Dec 05 15:44:46 MSK 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-016e-d617-6158-00000e191280 
-on database directory /Users/vladimir/java/projects/kyloRadius/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@50cf5a23 
+Fri Dec 06 13:34:23 MSK 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-016e-dac6-5e4d-00000b1f4460 
+on database directory /Users/vladimir/java/projects/kyloRadius/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@3b582111 
 Loaded from file:/Users/vladimir/.m2/repository/org/apache/derby/derby/10.10.2.0/derby-10.10.2.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_211-b12

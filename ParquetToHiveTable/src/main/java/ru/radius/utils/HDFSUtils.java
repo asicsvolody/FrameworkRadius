@@ -4,10 +4,11 @@
  * E-mail: yakimovvn@bk.ru
  */
 
-package ru.radius;
+package ru.radius.utils;
 
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import ru.radius.ParquetToHiveTable;
 
 import java.io.IOException;
 

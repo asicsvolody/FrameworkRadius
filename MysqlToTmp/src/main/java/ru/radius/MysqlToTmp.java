@@ -66,7 +66,6 @@ public class MysqlToTmp {
 
         createPassword(config.getPassDB());
 
-
         System.out.println("Sqoop run process");
         String command = String.format("sqoop import " +
                         "--connect jdbc:mysql://%s:%s/%s?serverTimezone=UTC&zeroDateTimeBehavior=CONVERT_TO_NULL " +
@@ -158,6 +157,7 @@ public class MysqlToTmp {
         }
     }
 
+    // host port username password database table tmpDirTo PrimaryKay
     public static void main(String[] args) throws Exception {
         new MysqlToTmp(MySqlToTmpConfig.getConfig(args))
                 .exportDataToTmp();

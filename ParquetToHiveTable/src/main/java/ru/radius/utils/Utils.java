@@ -4,10 +4,12 @@
  * E-mail: yakimovvn@bk.ru
  */
 
-package ru.radius;
+package ru.radius.utils;
 
 import org.apache.spark.sql.types.DataType;
 import org.apache.spark.sql.types.StructType;
+import ru.radius.ParquetToHiveTable;
+import ru.radius.config.ParquetToHiveTableConfig;
 
 import java.util.Arrays;
 import java.util.List;
@@ -37,6 +39,8 @@ public class Utils {
 
         return colsList;
     }
+
+
 
     public static List<String> getFormattingCols(StructType type) {
         return Arrays.stream(type.fields())

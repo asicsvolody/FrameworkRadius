@@ -50,6 +50,9 @@ public class MysqlToHiveConfig {
         this.partitions = partitions;
     }
 
+
+    //localhost 3306 root bhbyf.hnftdf usersDB users /tmp/tmpDir /hiveDir user_id user_age/int
+
     public static MysqlToHiveConfig getConfig(String[] args) throws Exception {
         if(args.length < 9)
             throw new Exception("Args is not correct");
@@ -67,7 +70,7 @@ public class MysqlToHiveConfig {
         String primaryKeys = args[8];
 
 
-        List<String> partitions = Arrays.stream(Arrays.copyOfRange(args, 8, args.length))
+        List<String> partitions = Arrays.stream(Arrays.copyOfRange(args, 9, args.length))
                 .map(v -> String.join(" ",v.split("/",2)))
                 .collect(Collectors.toList());
         return new MysqlToHiveConfig(hostDB,baseTo,userDB, passDB, fromDB, fromTable, tmpDir, hiveDirTo,primaryKeys, partitions);

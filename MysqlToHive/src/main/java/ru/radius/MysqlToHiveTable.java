@@ -41,6 +41,10 @@ public class MysqlToHiveTable {
 
         ParquetToHiveTable.main(parquetToHiveTableList.toArray(new String[0]));
     }
+
+
+    //post port username password database table tmpDir hiveDir primaryKey partitions(columnName/columnType(exs : user_id/int))
+
     public static void main(String[] args) throws Exception {
         new MysqlToHiveTable(MysqlToHiveConfig.getConfig(args))
                 .mysqlToHiveTable();

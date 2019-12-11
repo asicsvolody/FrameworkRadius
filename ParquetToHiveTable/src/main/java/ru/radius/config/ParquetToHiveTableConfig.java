@@ -4,7 +4,7 @@
  * E-mail: yakimovvn@bk.ru
  */
 
-package ru.radius;
+package ru.radius.config;
 
 import java.util.Arrays;
 import java.util.List;
